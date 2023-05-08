@@ -20,6 +20,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
+        title: 'J.A.T.E.',
         inject: true,
         chunks: ["main"],
         filename: "index.html",
@@ -29,6 +30,8 @@ module.exports = () => {
         swDest: "src-sw.js",
       }),
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: "Just Another Text Editor",
         short_name: "JATE",
         description: "A simple text editor",
