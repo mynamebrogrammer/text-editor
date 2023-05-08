@@ -18,9 +18,9 @@ butInstall.addEventListener('click', async () => {
 
     promptEvent.prompt();
 
-    const result = await promptEvent.userChoice;
+    // const result = await promptEvent.userChoice;
 
-    console.log(result);
+    // console.log(result);
 
     window.deferredPrompt = null;
 
