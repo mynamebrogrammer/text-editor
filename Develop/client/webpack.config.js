@@ -14,7 +14,7 @@ module.exports = () => {
       install: "./src/js/install.js",
     },
     output: {
-      filename: "[name].bundle.js",
+      filename: "JATE.bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
@@ -33,7 +33,7 @@ module.exports = () => {
         short_name: "JATE",
         description: "A simple text editor",
         background_color: "#ffffff",
-        crossorigin: "null", //can be null, use-credentials or anonymous
+        crossorigin: "use-credentials", //can be null, use-credentials or anonymous
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
