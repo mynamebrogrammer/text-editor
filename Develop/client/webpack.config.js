@@ -14,12 +14,12 @@ module.exports = () => {
       install: "./src/js/install.js",
     },
     output: {
-      filename: "JATE.bundle.js",
+      filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "./index.html",
         inject: true,
         chunks: ["main"],
         filename: "index.html",
