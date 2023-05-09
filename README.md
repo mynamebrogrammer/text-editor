@@ -32,6 +32,9 @@ The application will be deployed to Heroku. The user will be able to access the 
 ## Demo
 
 The application is deployed to Heroku. You can access it [here](https://frozen-coast-71902.herokuapp.com/).
+![Screenshot 2023-05-08 221709](https://user-images.githubusercontent.com/79487250/237000676-bae68cf0-64e7-4e54-ac2a-075ab207c857.png)
+
+![Screenshot 2023-05-08 221837](https://user-images.githubusercontent.com/79487250/237000842-9d3ccf39-6239-4a3e-8757-c45d34a1a57e.png)
 
 ## Contributing
 
