@@ -20,10 +20,6 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: 'J.A.T.E.',
-        inject: true,
-        chunks: ["main"],
-        filename: "index.html",
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
@@ -35,7 +31,10 @@ module.exports = () => {
         name: "Just Another Text Editor",
         short_name: "JATE",
         description: "A simple text editor",
+        display: "standalone",
         background_color: "#ffffff",
+        start_url: "/",
+        publicPath: "/",
         crossorigin: "use-credentials", //can be null, use-credentials or anonymous
         icons: [
           {
@@ -55,7 +54,7 @@ module.exports = () => {
         },
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /(node_modules)/,
           use: {
             loader: "babel-loader",
             options: {
